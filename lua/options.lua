@@ -3,10 +3,8 @@ require "nvchad.options"
 -- add yours here!
 
  local o = vim.o
- o.shiftwidth = 4
- o.smartindent = true
- o.tabstop = 4
- o.softtabstop = 4
  o.cursorlineopt ='both' -- to enable cursorline!
  o.relativenumber = true
+ vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "white" })
+ vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#ead84e" })
 
