@@ -9,6 +9,11 @@ if not vim.uv.fs_stat(lazypath) then
   local repo = "https://github.com/folke/lazy.nvim.git"
   vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
 end
+if vim.g.neovide then
+    vim.o.guifont = "JetBrainsMono Nerd Font:h14" -- text below applies for VimScript
+    vim.g.neovide_transparency = 0.9
+    vim.g.neovide_normal_opacity = 0.9
+end
 
 vim.opt.rtp:prepend(lazypath)
 local lazy_config = require "configs.lazy"

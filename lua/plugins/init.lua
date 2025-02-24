@@ -1,3 +1,5 @@
+local is_neovide = vim.g.neovide or false
+
 return {
   {
     "stevearc/conform.nvim",
@@ -35,6 +37,7 @@ return {
 {
   "sphamba/smear-cursor.nvim",
   event = "VeryLazy",
+  enabled = not(is_neovide),
   opts = require "configs.smear_cursor",
 },
 { 
