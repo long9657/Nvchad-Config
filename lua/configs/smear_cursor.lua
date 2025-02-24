@@ -1,6 +1,6 @@
-local options = {                -- Default  Range
-    stiffness = 0.8,             -- 0.6      [0, 1]
-    trailing_stiffness = 0.5,    -- 0.3      [0, 1]
+local options = {                  -- Default  Range
+    stiffness = 0.8,               -- 0.6      [0, 1]
+    trailing_stiffness = 0.5,      -- 0.3      [0, 1]
     distance_stop_animating = 0.5, -- 0.1      > 0
     -- Smear cursor when switching buffers or windows.
     smear_between_buffers = true,
@@ -18,7 +18,8 @@ local options = {                -- Default  Range
 
     -- Smear cursor in insert mode.
     -- See also `vertical_bar_cursor_insert_mode` and `distance_stop_animating_vertical_bar`.
-    smear_insert_mode = true,
+    smear_insert_mode = false,
+
 }
 
 return options
