@@ -6,9 +6,13 @@ if vim.g.neovide then
     vim.g.neovide_refresh_rate = 144
     vim.g.neovide_cursor_vfx_mode = 'ripple'
     vim.g.neovide_cursor_animation_length = 0.03
-    vim.g.neovide_cursor_trail_size = 0.9
+    vim.g.neovide_cursor_trail_size = 0.8
     vim.g.neovide_remember_window_size = true
-    vim.o.guifont = "JetBrainsMono Nerd Font:h14" -- text below applies for VimScript
+    vim.o.guifont = "ComicShannsMono Nerd Font:h14" -- text below applies for VimScript
+    vim.g.neovide_padding_top = 0
+    vim.g.neovide_padding_bottom = 0
+    vim.g.neovide_padding_right = 0
+    vim.g.neovide_padding_left = 0
 end
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
