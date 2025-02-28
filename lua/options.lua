@@ -10,4 +10,3 @@ o.relativenumber = true
 o.linebreak = true
 vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "white" })
 vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#ead84e" })
-

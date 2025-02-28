@@ -35,6 +35,8 @@ M.ui = {
         }
     }
 }
+M.term = {
+}
 vim.fn.timer_start(1000, function()
     vim.schedule(function()
         vim.api.nvim_command('redrawstatus')
