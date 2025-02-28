@@ -14,14 +14,22 @@ M.base46 = {
         -- 	Comment = { italic = true },
         -- 	["@comment"] = { italic = true },
         -- },
-    }
+    },
 }
 
 -- M.nvdash = { load_on_startup = true }
 M.ui = {
---       tabufline = {
---          lazyload = false
---      }
+    --       tabufline = {
+    --      }
+    statusline = {
+        theme = "default",
+        separator_style = "default",
+        order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor", "time" },
+        modules = {
+            time = function()
+                return os.date('%H:%M:%S')
+            end,
+        }
+    }
 }
-
 return M
