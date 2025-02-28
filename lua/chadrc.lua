@@ -5,23 +5,23 @@
 ---@typeChadrcConfig
 local M = {}
 M.base46 = {
-    theme = "tokyonight",
-    -- transparency = true,
-    -- hl_override = {
-    --     CursorLine = {
-    --         bg = "#3e3e3e",
-    --     },
+    theme = "catppuccin",
+    transparency = not vim.g.neovide,
+    hl_override = {
+        CursorLine = {
+            bg = "#3e3e3e",
+        },
         -- 	Comment = { italic = true },
         -- 	["@comment"] = { italic = true },
         -- },
-    -- }
+    }
 }
 
 -- M.nvdash = { load_on_startup = true }
--- M.ui = {
+M.ui = {
 --       tabufline = {
 --          lazyload = false
 --      }
--- }
+}
 
 return M
