@@ -4,6 +4,9 @@
 
 ---@typeChadrcConfig
 local M = {}
+local function get_current_time()
+    return os.date('%H:%M:%S')
+end
 M.base46 = {
     theme = "catppuccin",
     transparency = not vim.g.neovide,
@@ -27,9 +30,14 @@ M.ui = {
         order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor", "time" },
         modules = {
             time = function()
-                return os.date('%H:%M:%S')
+                return get_current_time()
             end,
         }
     }
 }
+vim.fn.timer_start(1000, function()
+    vim.schedule(function()
+        vim.api.nvim_command('redrawstatus')
+    end)
+end, { ['repeat'] = -1 })
 return M
