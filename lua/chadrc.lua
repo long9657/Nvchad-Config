@@ -8,8 +8,8 @@ local function get_current_time()
     return os.date('%H:%M:%S')
 end
 M.base46 = {
-    theme = "catppuccin",
-    transparency = not vim.g.neovide,
+    theme = "carbonfox",
+    transparency = true,
     hl_override = {
         CursorLine = {
             bg = "#3e3e3e",
