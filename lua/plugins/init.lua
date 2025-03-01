@@ -30,6 +30,13 @@ return {
         enabled = not (is_neovide),
         opts = require "configs.smear_cursor",
     },
+    {
+        "CRAG666/code_runner.nvim",
+        event = "VeryLazy",
+        config = function()
+            require "configs.code_runner"
+        end,
+    }
     -- {
     -- 	"nvim-treesitter/nvim-treesitter",
     -- 	opts = {
