@@ -8,7 +8,7 @@ local function get_current_time()
     return os.date('%H:%M:%S')
 end
 M.base46 = {
-    theme = "flexoki-light",
+    theme = "flouromachine",
     transparency = false,
     hl_override = {
         -- CursorLine = {
