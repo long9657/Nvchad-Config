@@ -23,13 +23,6 @@ return {
             require "configs.indent_blankline"
         end,
     },
-
-    {
-        "sphamba/smear-cursor.nvim",
-        event = "VeryLazy",
-        enabled = not (is_neovide),
-        opts = require "configs.smear_cursor",
-    },
     {
         "CRAG666/code_runner.nvim",
         event = "VeryLazy",
@@ -37,6 +30,12 @@ return {
             require "configs.code_runner"
         end,
     }
+    -- {
+    --     "sphamba/smear-cursor.nvim",
+    --     event = "VeryLazy",
+    --     enabled = not (is_neovide),
+    --     opts = require "configs.smear_cursor",
+    -- },
     -- {
     -- 	"nvim-treesitter/nvim-treesitter",
     -- 	opts = {
