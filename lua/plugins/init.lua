@@ -2,6 +2,10 @@ local is_neovide = vim.g.neovide or false
 
 return {
     {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+    },
+    {
         "stevearc/conform.nvim",
         -- event = 'BufWritePre', -- uncomment for format on save
         opts = require "configs.conform",
@@ -23,19 +27,6 @@ return {
             require "configs.indent_blankline"
         end,
     },
-    {
-        "CRAG666/code_runner.nvim",
-        event = "VeryLazy",
-        config = function()
-            require "configs.code_runner"
-        end,
-    }
-    -- {
-    --     "sphamba/smear-cursor.nvim",
-    --     event = "VeryLazy",
-    --     enabled = not (is_neovide),
-    --     opts = require "configs.smear_cursor",
-    -- },
     -- {
     -- 	"nvim-treesitter/nvim-treesitter",
     -- 	opts = {

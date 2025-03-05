@@ -8,12 +8,12 @@ local function get_current_time()
     return os.date('%H:%M:%S')
 end
 M.base46 = {
-    theme = "tokyonight",
-    transparency = true,
+    theme = "flexoki-light",
+    transparency = false,
     hl_override = {
-        CursorLine = {
-            bg = "#3e3e3e",
-        },
+        -- CursorLine = {
+        --     bg = "#3e3e3e",
+        -- },
         -- 	Comment = { italic = true },
         -- 	["@comment"] = { italic = true },
         -- },
