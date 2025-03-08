@@ -8,12 +8,12 @@ local function get_current_time()
     return os.date('%H:%M:%S')
 end
 M.base46 = {
-    theme = "flouromachine",
-    transparency = false,
+    theme = "tokyonight",
+    transparency = true,
     hl_override = {
-        -- CursorLine = {
-        --     bg = "#3e3e3e",
-        -- },
+        CursorLine = {
+            bg = "#3e3e3e",
+        },
         -- 	Comment = { italic = true },
         -- 	["@comment"] = { italic = true },
         -- },
@@ -27,11 +27,14 @@ M.ui = {
     statusline = {
         theme = "default",
         separator_style = "default",
-        order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor", "time" },
+        order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "abc", "cwd", "time" },
         modules = {
             time = function()
                 return get_current_time()
             end,
+            abc = function ()
+                return "long9657"
+            end
         }
     }
 }
