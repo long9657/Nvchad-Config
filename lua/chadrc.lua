@@ -27,7 +27,7 @@ M.ui = {
     statusline = {
         theme = "default",
         separator_style = "default",
-        order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "abc", "cwd", "time" },
+        order = { "mode", "file", "git", "%=", "abc", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "time" },
         modules = {
             time = function()
                 return get_current_time()
